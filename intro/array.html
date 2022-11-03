@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempora placeat dolorem, error at modi optio, aperiam blanditiis nostrum a et in perferendis molestiae minus consequatur magnam dolores delectus. Quos!</p>
+    <ol>
+        <li>Apple</li>
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>FaceBook</li>
+    </ol>
+
+    <ul>
+        <li>Apple</li>
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>FaceBook</li>
+    </ul>
+
+    <hr/> -->
+    <h1>Arrays</h1>
+
+   <script>
+        // // alert('Hi, how are you');
+        // // document.write('Hi, How are you');
+        // let name = "Hari";
+        // console.log(name);
+        // // const age = 26;
+        // // age = 27;
+        // // console.log(age);
+
+        // let some1 = "hello";
+        // console.log(some1);
+        
+        // let employeeName = "Ramesh"; //came case
+        // // let EmployeeName, employeename, employee_name....
+
+        // let age = "25"; //string
+
+        // let isAlive = true; //false
+
+
+        // //control structure
+
+        // if(age == 25) // type cast
+        // {
+        //     console.log("You are eligible");
+        // }
+        // else
+        // {
+        //     console.log("You are not eligible");
+        // }
+
+        // for(let i=0; i<=100; i++){
+        //     if(i%2==0)
+        //     console.log(i)
+        // }
+
+        // let x = 0;
+        // while(x < 10){
+        //     console.log(x);
+        //     x++;
+        // }
+
+        // let country = "Us"
+        // switch(country){
+        //     case "In":
+        //         console.log("Its from India");
+        //         break;
+        //     case "Us":
+        //         console.log("Its from USA");
+        //         break;
+            
+        // }
+
+        // function sayHello(name, greeting = "Good Morning"){
+        //     console.log(`Hello ${name}, ${greeting}`);
+        // }
+
+        // sayHello("Govind","Good Afternoon");
+
+        // sayHello("Ramesh");
+
+        // //fuction expression
+        // //arrow function
+        // const sayHello2 = (name, greeting = "Good Morning") => {
+        //     console.log(`Hello ${name}, ${greeting}`);
+        // };
+
+
+        // sayHello2("Prasad");
+
+            // function hello(){
+            //     console.log("Hello World");
+            // }
+
+            // hello();
+            
+            // const hello2 = () =>  console.log("Hello World");
+
+            // hello2();
+
+            // function sum(a,b){
+            //     return a+b;
+            // }
+
+            //arrow functions
+            // const sum = (a,b) => a+b;
+            // console.log(sum(10,11));
+
+            // const product = (a,b) => a*b;
+            // console.log(product(10,11));
+
+
+            // function print(name)
+            // {
+            //     console.log("Hello " + name)
+            // }
+
+            // print("Rakesh");
+
+            // const p = print;
+
+            // p("Ramesh");
+
+            // const q = name =>  console.log("Hello " + name);
+
+            // q("Prasad");
+
+            // 1 parameter => remove paranthesis
+            // 1 statement => remove curly brackets
+
+
+
+            // function isEven(number)
+            // {
+            //     if(number % 2 == 0)
+            //     return true;
+            //     else
+            //     return false;
+                
+            // }
+            
+            // const isEven = number => number%2 == 0;
+
+
+            // console.log(isEven(8))
+            // console.log(isEven(11))
+
+            // // function power(x,n)
+            // // {
+            // //     return x**n;
+            // // }
+
+
+            // //arrow functions
+            // let power = (x,n) => x**n;
+
+            // console.log(power(10,2));
+
+            // let deals = [
+            //     { name : 'Prestige Mixer Grinder', price : 6990.00, discount : 36  },
+            //     { name : 'Redmi Note 11 Pro', price : 15199.00, discount : 26  },
+            //     { name : 'Crucial X6 1TB SSD', price : 7299.00, discount : 49  },    
+            //     { name : 'Shaker Bottle', price : 79.00, discount : 82 },
+            //     { name : 'AT Backpack', price : 749.00, discount : 67 },
+            //     { name : 'Havells Kettle', price : 1398.00, discount : 53  },
+            //     { name : 'Mamaearth Lotion', price : 399.00, discount : 50  },
+            //     { name : 'Borosil Dinner Set', price : 1699.00, discount : 51  },
+            //     { name : 'GM Power Strip', price : 399.00, discount : 32  },
+            //     { name : 'Doctor Ortho Slippers', price : 339.00, discount : 43  },
+            //     { name : 'Ajanta Wall Clock', price : 399.00, discount : 14  },
+            //     { name : 'Lifelong Skipping Rope', price : 59.00, discount : 80  },
+            //     { name : 'Butterfly Vegetable Cutter', price : 289.00, discount : 68 }
+            // ];
+
+            // console.log(deals);
+            // let filtered = deals.filter(deal => deal.price<100)
+            // console.log(filtered);
+
+            // let names = deals.map( deal => deal.name);
+            // console.log(names);
+
+            // let prices = deals.map( deal => deal.price);
+            // console.log(prices);
+
+            // let deals = [
+            //     { name : 'Prestige Mixer Grinder', price : 6990.00, discount : 36  },
+            //     { name : 'Redmi Note 11 Pro', price : 15199.00, discount : 26  },
+            //     { name : 'Crucial X6 1TB SSD', price : 7299.00, discount : 49  },    
+            //     { name : 'Shaker Bottle', price : 79.00, discount : 82 },
+            //     { name : 'AT Backpack', price : 749.00, discount : 67 },
+            //     { name : 'Havells Kettle', price : 1398.00, discount : 53  },
+            //     { name : 'Mamaearth Lotion', price : 399.00, discount : 50  },
+            //     { name : 'Borosil Dinner Set', price : 1699.00, discount : 51  },
+            //     { name : 'GM Power Strip', price : 399.00, discount : 32  },
+            //     { name : 'Doctor Ortho Slippers', price : 339.00, discount : 43  },
+            //     { name : 'Ajanta Wall Clock', price : 399.00, discount : 14  },
+            //     { name : 'Lifelong Skipping Rope', price : 59.00, discount : 80  },
+            //     { name : 'Butterfly Vegetable Cutter', price : 289.00, discount : 68 }
+            // ];
+
+            // let mydeals = deals.map(deal => ({...deal, seller:"Amazon"}));
+
+            // console.log(mydeals);
+
+            // function print({name, age, country}){
+            //     console.log(`Name is ${name} is ${age} years old.`)
+            // }
+
+            // const personA = {
+            //     name:"max",
+            //     age:20,
+            //     country:"india",
+            // }
+
+            // print(personA);
+
+
+
+
+
+
+
+
+
+   </script> 
+</body>
+</html>

@@ -1,0 +1,21 @@
+#ball1{
+    width:100px;
+    height:100px;
+    background:#ffaa0055;
+    border-radius:100%;
+    border:3px solid #0f0;
+    position:absolute;
+    left:100px;
+    top:100px;
+}
+
+body{
+    background-image: url('bg.jpg');
+}
+
+.heading{
+    color: #ff000050;
+    color:rgba(200, 100, 0, 0.5);
+    font-size:100px;
+    /* #rgba */
+}

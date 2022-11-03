@@ -1,0 +1,30 @@
+Web technologies
+
+web sites and web applications
+
+online resources > practise > mini projects
+
+-----------------------------------------------------
+
+HTML
+hyper text markup language
+
+CSS
+cascading style sheets
+
+Java Script
+
+-----------------------------------------------------
+
+Web applications
+
+Front End
+HTML, CSS, JS ...
+
+Back End
+PHP / Python ...
+
+Databases
+MySQL, MongoDB, ...
+
+-----------------------------------------------------
