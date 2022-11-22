@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header') %>
+  <body>
+    <%- include('partials/navbar') %>
+    <div class="container">
+      <div class="card my-4" style="background-color: #ffffffaa">
+        <div class="card-header">
+          <h1>Quiz</h1>
+          <p class="breadcrumb">🟠🔵🟢🟣</p>
+          <%-include('partials/clock')%>
+        </div>
+        <div class="card-body p-3">
+          <div class="row">
+            <div class="col-md-8">
+              <% if(typeof questions !='undefined'){ questions.map(question=>{
+              %>
+
+              <ul class="list-group my-2">
+                <li class="list-group-item bg-light fw-bold">
+                  <%=question.id%>. <%=question.text%>
+                </li>
+                <% question.options.map(option=>{ %>
+                <li class="list-group-item">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="question-option<%=question.id%>"
+                      id="option<%=question.id%><%=option.option%>"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="option<%=question.id%><%=option.option%>"
+                    >
+                      <%=option.text %>
+                    </label>
+                  </div>
+                </li>
+                <% }) %>
+              </ul>
+              <% }); %> <% }%>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-group my-2">
+                <li class="list-group-item bg-light fw-bold">Questions</li>
+                <% if(typeof questions !='undefined'){ questions.map(question=>{
+                %>
+                <li class="list-group-item">⬜ Question <%=question.id%></li>
+                <% }); } %>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted bg-light">
+          <div class="float-end">
+            <button class="btn btn-outline-danger">😿 Reset Quiz</button> &nbsp;
+            <button class="btn btn-outline-primary">🚀 Submit Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer')%>
+  </body>
+</html>

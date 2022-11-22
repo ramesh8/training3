@@ -1,0 +1,10 @@
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background:url("../images/pexels-andreea-ch-1166644.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    padding-bottom: 64px;
+}
