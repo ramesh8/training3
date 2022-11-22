@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+<div class="container">
+  <% const getCollab = (user, project)=> collabs.find(c => c.email == user.email
+  && c.project == project.name) %>
+  <table>
+    <tr>
+      <th>&nbsp;</th>
+      <% projects.map(project=>{%>
+      <th><%=project.name%></th>
+      <% }); %>
+    </tr>
+    <% users.map(user=>{%>
+
+    <tr>
+      <th><%=user.name%></th>
+      <% projects.map(project=>{%>
+      <td>
+        <span class="collab">
+          <%collab = getCollab(user,project);%> <%=collab?.notes%>
+        </span>
+      </td>
+      <% }); %>
+    </tr>
+
+    <% }); %>
+  </table>
+</div>
+<style>
+  table {
+    border: 1px solid #fac;
+    padding: 10px;
+  }
+  td,
+  th {
+    padding: 10px;
+  }
+  .collab {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    padding: 10px;
+    box-shadow: 1px 1px 2px #888;
+    background-color: #fffd75;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", (e) => {
+    var colors = ["#fac", "#fffd74", "yellow", "cyan", "orange"];
+
+    document.querySelectorAll(".collab").forEach((collab) => {
+      var new_color = colors[Math.floor(Math.random() * colors.length)];
+      collab.style.backgroundColor = new_color;
+      console.log(collab);
+    });
+  });
+</script>
+<%- include('partials/footer') %>
