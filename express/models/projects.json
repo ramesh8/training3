@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "637c9abd87bd7f617e3d1d43"
+  },
+  "name": "SNAP",
+  "status": "in progress",
+  "version": "beta"
+},{
+  "_id": {
+    "$oid": "637c9aed87bd7f617e3d1d44"
+  },
+  "name": "NER",
+  "status": "In Progress",
+  "version": "beta"
+},{
+  "_id": {
+    "$oid": "637ca10f87bd7f617e3d1d4e"
+  },
+  "name": "KG",
+  "status": "in progress",
+  "version": "alpha"
+},{
+  "_id": {
+    "$oid": "637ca16f87bd7f617e3d1d56"
+  },
+  "name": "Email Client",
+  "status": "in progress",
+  "version": "alpha"
+},{
+  "_id": {
+    "$oid": "637ca17d87bd7f617e3d1d57"
+  },
+  "name": "ML Benchmark",
+  "status": "in progress",
+  "version": "beta"
+}]

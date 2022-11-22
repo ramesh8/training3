@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "63638eaf21b78626da5c5d9f"
+  },
+  "name": "ramesh",
+  "password": "$2b$10$wJPW2rbxu.5BDGFY1alu6.5JLpEDjHd2lITE4GgnXjf/2qwL7qYSO",
+  "email": "ramesh@demo.com"
+},{
+  "_id": {
+    "$oid": "6364d7947e639831b499a6c3"
+  },
+  "name": "prasad",
+  "password": "$2b$10$2Z0UBW8wUyNBVMS9/2uEEuNafLVBBsmBGPvPuIFNp4P63Z4NwuiZO",
+  "email": "prasad@demo.com"
+},{
+  "_id": {
+    "$oid": "637ca12d87bd7f617e3d1d51"
+  },
+  "name": "prakash",
+  "password": "$2b$10$2Z0UBW8wUyNBVMS9/2uEEuNafLVBBsmBGPvPuIFNp4P63Z4NwuiZO",
+  "email": "prakash@demo.com"
+},{
+  "_id": {
+    "$oid": "637ca13987bd7f617e3d1d52"
+  },
+  "name": "azhar",
+  "password": "$2b$10$2Z0UBW8wUyNBVMS9/2uEEuNafLVBBsmBGPvPuIFNp4P63Z4NwuiZO",
+  "email": "azhar@demo.com"
+},{
+  "_id": {
+    "$oid": "637ca14487bd7f617e3d1d53"
+  },
+  "name": "alekya",
+  "password": "$2b$10$2Z0UBW8wUyNBVMS9/2uEEuNafLVBBsmBGPvPuIFNp4P63Z4NwuiZO",
+  "email": "alekya@demo.com"
+}]
